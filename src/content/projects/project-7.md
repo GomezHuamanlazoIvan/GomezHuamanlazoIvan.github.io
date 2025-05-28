@@ -1,6 +1,6 @@
 ---
 title: SEMANA 07
-description: Uso de Hooks en Framework JS: useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo y hooks personalizados.
+description: Uso de Hooks en Framework JS useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo y hooks personalizados.
 publishDate: 'Nov 23 2024'
 isFeatured: true
 seo:
@@ -12,7 +12,9 @@ seo:
 # Uso de Hooks en Framework JS
 
 Esta semana se profundizó en el uso de hooks en frameworks como React, permitiendo gestionar el estado, efectos secundarios, contexto, referencias y optimización de componentes funcionales.
-![Imagen del proyecto 1](/project-7.jpg)
+
+![Imagen del proyecto 7](/project-7.jpg)
+
 ---
 
 ## Principales Hooks

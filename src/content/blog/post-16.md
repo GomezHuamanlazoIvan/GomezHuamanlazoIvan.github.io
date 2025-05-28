@@ -1,18 +1,18 @@
 ---
 title: Bibliografia y Recursos
 excerpt: Se comparte un listado de enlaces a recursos, herramientas y tecnologías que he utilizado en el desarrollo de este portafolio y en las actividades de cada semana
-publishDate: 'May 10 2025'
+publishDate: '2025-05-10'
 isFeatured: true
 tags:
   - Web
   - Guide
 seo:
   image:
-    src: '/post-14.jpg'
+    src: '/project-7.jpg'
     alt: Wavy lines
 ---
 
-![Wavy lines](/post-14.jpg)
+![Wavy lines](/project-7.jpg)
 
 A continuación, comparto un listado de enlaces a recursos, herramientas y tecnologías que he utilizado en el desarrollo de este portafolio y en las actividades de cada semana:
 
