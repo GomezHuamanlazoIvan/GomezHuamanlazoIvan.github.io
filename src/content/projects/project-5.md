@@ -1,62 +1,92 @@
 ---
-title: 'PixelPerfect Art Gallery'
-description: PixelPerfect Art Gallery is an innovative online platform that transcends traditional art exhibition spaces.
-publishDate: 'Oct 25 2023'
+title: SEMANA 05
+description: Desarrollo de aplicaciones FrontEnd con Framework JS, componentes, estilos y props.
+publishDate: 'Nov 09 2024'
 isFeatured: true
 seo:
   image:
     src: '/project-5.jpg'
+    alt: Imagen del proyecto 5
 ---
 
-![Project preview](/project-5.jpg)
+# Desarrollo FrontEnd con Framework JS
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Esta semana se centró en el desarrollo de aplicaciones FrontEnd utilizando un framework de JavaScript moderno (como React), explorando su estructura, componentes, estilos y la gestión de datos entre componentes.
+![Imagen del proyecto 1](/project-5.jpg)
+---
 
-**Project Overview:**
-PixelPerfect Art Gallery is an innovative online platform that transcends traditional art exhibition spaces. This web application is dedicated to showcasing and celebrating pixel art in the form of Non-Fungible Tokens (NFTs), providing artists with a digital canvas to display their unique creations while ensuring secure ownership through blockchain technology.
+## Estructura y Operación de un Framework JS
 
-## Objectives
+- Los frameworks JS como React, Vue o Angular permiten crear aplicaciones web dinámicas y escalables.
+- **Client Side Rendering (CSR):** El renderizado ocurre en el navegador del usuario, mejorando la experiencia y velocidad de interacción.
 
-1. Create an immersive online gallery experience specifically tailored for pixel art enthusiasts and NFT collectors.
-2. Utilize blockchain technology to authenticate and secure ownership of digital artworks, ensuring a transparent and tamper-proof art marketplace.
-3. Foster a community of digital artists and art collectors, providing a platform for collaboration, appreciation, and exchange.
+---
 
-## Features
+## Gestión de Dependencias y Herramientas
 
-1. **NFT Art Exhibition:**
+- Uso de gestores de paquetes como **npm** o **yarn** para instalar librerías y dependencias.
+- Herramientas como **Create React App**, **Vite** o **Next.js** facilitan la creación y configuración de proyectos.
 
-- PixelPerfect features a curated exhibition of pixel art NFTs, showcasing a diverse range of styles, themes, and techniques.
-- Users can explore and appreciate the intricate details of each digital artwork in a visually stunning online gallery.
+---
 
-2. **Blockchain Authentication:**
+## Desarrollo Basado en Componentes
 
-- Each pixel art piece is tokenized as an NFT on a blockchain, ensuring authenticity, provenance, and secure ownership.
-- Users can view the blockchain records to verify the origin and history of the digital artworks.
+- **Componentes:** Unidades reutilizables de interfaz.
+- **JSX:** Sintaxis que permite escribir HTML dentro de JavaScript (usado en React).
+  ```jsx
+  function Saludo() {
+    return <h1>Hola Mundo</h1>;
+  }
+  ```
+- **Props:** Permiten pasar datos a los componentes.
+  ```jsx
+  function Saludo(props) {
+    return <h1>Hola, {props.nombre}</h1>;
+  }
+  ```
+- **Children:** Permiten anidar contenido dentro de un componente.
+  ```jsx
+  function Contenedor({ children }) {
+    return <div>{children}</div>;
+  }
+  ```
 
-3. **Virtual Art Auctions:**
+---
 
-- PixelPerfect hosts virtual art auctions, allowing users to bid on and acquire exclusive pixel art NFTs.
-- The auction platform provides a dynamic and engaging environment for art enthusiasts and collectors.
+## Utilización de Estilos en Framework JS
 
-4. **Community Collaboration Spaces:**
+- **Styles inline:**  
+  ```jsx
+  <div style={{ color: 'red', fontSize: '20px' }}>Texto rojo</div>
+  ```
+- **Style Sheets:**  
+  - Importar archivos CSS tradicionales.
+    ```jsx
+    import './App.css';
+    ```
+- **CSS Modules:**  
+  - Permiten estilos locales a cada componente.
+    ```jsx
+    import styles from './App.module.css';
+    <div className={styles.titulo}>Título</div>
+    ```
+- **Styled Components:**  
+  - Librería para escribir CSS en JS.
+    ```jsx
+    import styled from 'styled-components';
+    const Boton = styled.button`background: blue; color: white;`;
+    ```
+- **Framework CSS:**  
+  - Integrar Tailwind, Bootstrap u otros dentro del framework.
 
-- Dedicated community spaces allow artists to connect, collaborate, and showcase their creative process.
-- Users can discuss techniques, share insights, and even collaborate on pixel art projects within the PixelPerfect community.
+---
 
-5. **Interactive Pixel Art Creation Workshop:**
+## Laboratorio 05A: Props y Children
 
-- PixelPerfect provides a virtual workshop where users can create their own pixel art and potentially tokenize their creations as NFTs.
-- Artists can share their works with the community or submit them for consideration in future exhibitions.
+En el laboratorio se practicó el paso de datos entre componentes usando props y children, mostrando la información en un componente hijo y reforzando el desarrollo basado en componentes.
 
-## Technology Stack
+---
 
-- Frontend: Angular for a dynamic and responsive user interface.
-- Backend: Node.js for handling server-side logic and API integration.
-- Database: Ethereum blockchain for storing NFT ownership and transaction details.
-- Smart Contracts: Solidity for developing blockchain smart contracts.
+## Reflexión
 
-## Outcome
-
-PixelPerfect Art Gallery has successfully created a digital haven for pixel art enthusiasts, providing a secure and engaging platform for artists and collectors alike. The integration of blockchain technology ensures transparency and authenticity in the world of digital art, fostering a vibrant community that appreciates the uniqueness and creativity of pixel art NFTs.
-
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Esta semana aprendí a estructurar aplicaciones FrontEnd con un framework JS, comprendiendo la importancia de los componentes, el paso de datos con props y children, y las distintas formas de aplicar estilos. Aprendí mediante la práctica, explorando ejemplos y realizando el laboratorio, lo que me permitió afianzar los conceptos y aplicarlos en proyectos reales.

@@ -40,20 +40,20 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     website: 'https://example.com',
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Gomez Humanlazo Ivan Paul',
+    subtitle: 'DESARROLLO WEB',
+    description: 'Tema Astro.js y Tailwind CSS para blog y portafolio por justgoodui.com',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Dante - Tema Astro.js y Tailwind CSS'
     },
     headerNavLinks: [
         {
-            text: 'Home',
+            text: 'Inicio',
             href: '/'
         },
         {
-            text: 'Projects',
+            text: 'Proyectos',
             href: '/projects'
         },
         {
@@ -61,32 +61,32 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Tags',
-            href: '/tags'
+            text: 'GitHub',
+            href: '/https://github.com/GomezHuamanlazoIvan'
         }
     ],
     footerNavLinks: [
         {
-            text: 'About',
+            text: 'Acerca de',
             href: '/about'
         },
         {
-            text: 'Contact',
+            text: 'Contacto',
             href: '/contact'
         },
         {
-            text: 'Terms',
+            text: 'Términos',
             href: '/terms'
         },
         {
-            text: 'Download theme',
+            text: 'Descargar tema',
             href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'Facebook',
+            href: 'https://www.facebook.com/ivanpaul.gomezhuamanlazo'
         },
         {
             text: 'Instagram',
@@ -98,22 +98,22 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+        title: '¡HOLA Y BIENVENIDO A MI PORTAFOLIO ELECTRÓNICO!',
+        text: "Soy **Ivan Paul Gomez Humanlazo**, desarrollador web apasionado por la colaboración y la inteligencia artificial. Mi enfoque se basa en la intuición, la investigación precisa y el uso de la estética como motor para crear productos excepcionales. Disfruto del buen software, el diseño visual y los principios del crecimiento guiado por producto. Explora mis proyectos en <a href='https://github.com/GomezHumanlazoIvan'>GitHub</a>",
         image: {
             src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'Persona sentada en un escritorio frente a una computadora'
         },
         actions: [
             {
-                text: 'Get in Touch',
+                text: 'Ponerse en contacto',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        title: 'Suscríbete al boletín de Gomez Humanlazo Ivan Paul',
+        text: 'Una actualización por semana. Todas las publicaciones más recientes directamente en tu bandeja de entrada.',
         formUrl: '#'
     },
     postsPerPage: 8,

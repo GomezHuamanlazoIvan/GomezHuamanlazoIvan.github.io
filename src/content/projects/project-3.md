@@ -1,64 +1,103 @@
 ---
-title: 'RoboChef - AI Powered Cooking Guide'
-description: RoboChef Recipe Assistant is a groundbreaking mobile application that leverages artificial intelligence to redefine the cooking experience.
-publishDate: 'Oct 12 2023'
+title: SEMANA 03
+description: Desarrollo de páginas web Front-End con Bootstrap y Tailwind CSS. Layouts, componentes y práctica calificada.
+publishDate: 'Oct 26 2024'
 isFeatured: true
 seo:
   image:
     src: '/project-3.jpg'
+    alt: Imagen del proyecto 3
 ---
 
-![Project preview](/project-3.jpg)
+# Desarrollo Front-End con Bootstrap y Tailwind CSS
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+En esta semana se trabajó en el desarrollo de páginas web utilizando dos de las librerías CSS más populares: Bootstrap y Tailwind CSS, explorando layouts, componentes y buenas prácticas de diseño.
+![Imagen del proyecto 3](/project-3.jpg)
+---
 
-**Project Overview:**
-RoboChef Recipe Assistant is a groundbreaking mobile application that leverages artificial intelligence to redefine the cooking experience. By combining machine learning with culinary expertise, RoboChef empowers users to explore a world of flavors, improve their cooking skills, and enjoy personalized recipe recommendations.
+## Desarrollo con Bootstrap
 
-## Objectives
+- **Bootstrap:** Es una librería CSS que facilita la creación de sitios web responsivos y modernos mediante clases predefinidas.
+- **Layout:**  
+  - Uso de contenedores (`.container`), filas (`.row`) y columnas (`.col`).
+  - _Ejemplo:_  
+    ```html
+    <div class="container">
+      <div class="row">
+        <div class="col">Columna 1</div>
+        <div class="col">Columna 2</div>
+      </div>
+    </div>
+    ```
+- **Componentes:**  
+  - Botones, tarjetas, alertas, barras de navegación, formularios, modales, etc.
+  - _Ejemplo:_  
+    ```html
+    <button class="btn btn-primary">Botón Bootstrap</button>
+    ```
 
-1. Develop a user-friendly mobile app that utilizes AI to provide personalized recipe suggestions based on user preferences, dietary restrictions, and available ingredients.
-2. Create an interactive cooking guide that assists users with step-by-step instructions, cooking tips, and real-time assistance.
-3. Implement a smart learning system that refines recommendations over time, adapting to users' taste preferences and dietary changes.
+---
 
-## Features
+## Desarrollo con Tailwind CSS
 
-1. **AI-Powered Recipe Recommendations:**
+- **Tailwind CSS:** Es una librería de utilidades CSS que permite diseñar directamente en el HTML usando clases utilitarias.
+- **Tipografía y estilos:**  
+  - Font, line-height, text color, background, borders, efectos, tablas, espaciado.
+  - _Ejemplo:_  
+    ```html
+    <h1 class="text-2xl font-bold text-blue-600">Título con Tailwind</h1>
+    <div class="bg-gray-100 border p-4">Caja con fondo y borde</div>
+    ```
+- **Layout:**  
+  - Clases como `container`, `columns`, `break`, `box`, `block`, `inline-block`, `flex`, `grid`, `relative`, `absolute`.
+  - _Ejemplo:_  
+    ```html
+    <div class="container mx-auto">
+      <div class="flex flex-row gap-4">
+        <div class="basis-1/2">Columna 1</div>
+        <div class="basis-1/2">Columna 2</div>
+      </div>
+    </div>
+    ```
+- **Flexbox:**  
+  - Clases para dirección (`flex-row`, `flex-col`), envoltura (`flex-wrap`), crecimiento (`flex-grow`), reducción (`flex-shrink`).
+  - _Ejemplo:_  
+    ```html
+    <div class="flex flex-row flex-wrap">
+      <div class="flex-grow">Elemento flexible</div>
+    </div>
+    ```
 
-- RoboChef analyzes users' taste preferences, dietary restrictions, and ingredient availability to suggest personalized recipes.
-- Machine learning algorithms continuously learn from user interactions, refining recommendations for an increasingly tailored experience.
+---
 
-2. **Ingredient Scanner and Inventory Management:**
+## Application UI con Tailwind
 
-- Users can scan their pantry and refrigerator using the app's built-in ingredient scanner.
-- RoboChef provides recipe suggestions based on available ingredients and helps users manage their inventory by suggesting recipes that utilize soon-to-expire items.
+- **Elementos:**  
+  - Avatares, badges, dropdowns, botones, grupos de botones.
+  - _Ejemplo:_  
+    ```html
+    <span class="inline-block bg-green-200 text-green-800 px-2 rounded-full">Badge</span>
+    <button class="btn btn-primary">Botón</button>
+    ```
+- **Shells y Layouts:**  
+  - Encabezados, navegación, listas, formularios, feedback, overlays, componentes reutilizables.
+  - _Ejemplo:_  
+    ```html
+    <header class="bg-blue-600 text-white p-4">Encabezado</header>
+    <nav class="flex gap-4">
+      <a href="#" class="text-blue-600">Inicio</a>
+      <a href="#" class="text-blue-600">Contacto</a>
+    </nav>
+    ```
 
-3. **Step-by-Step Cooking Guide:**
+---
 
-- Each recipe includes a detailed step-by-step cooking guide with interactive multimedia elements.
-- Users can watch video tutorials, view images, and receive real-time tips from RoboChef as they progress through each cooking stage.
+## Práctica Calificada 03
 
-4. **Nutritional Insights and Meal Planning:**
+Durante la práctica se desarrolló un sitio web aplicando los conceptos de Bootstrap y Tailwind CSS, creando layouts responsivos, utilizando componentes y aplicando utilidades para lograr un diseño atractivo y funcional.
 
-- RoboChef provides nutritional information for each recipe, helping users make informed decisions about their meals.
-- The app offers meal planning features, allowing users to create weekly menus based on dietary goals and preferences.
+---
 
-5. **Voice-Activated Assistance:**
+## Reflexión
 
-- Users can interact with RoboChef using voice commands for a hands-free cooking experience.
-- The AI assistant responds to queries, provides cooking tips, and adapts recipes based on user preferences.
-
-## Technology Stack
-
-- Frontend: Flutter for a seamless cross-platform mobile app experience.
-- Backend: Django for handling server-side logic and API integration.
-- Database: PostgreSQL for efficient data storage and retrieval.
-- AI Integration: TensorFlow for machine learning models powering recipe recommendations.
-
-> Ethan Donovan possesses a rare blend of technical expertise and creative flair. They skillfully transformed our vague ideas into a visually stunning and highly functional website. The end result exceeded our expectations, and we continue to receive compliments on the design and user experience.
-
-## Outcome
-
-RoboChef Recipe Assistant has revolutionized the way users approach cooking, making it an enjoyable and educational experience. The AI-powered features not only simplify the cooking process but also contribute to users' culinary growth, creating a personalized and evolving cooking journey.
-
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Esta semana aprendí a utilizar Bootstrap y Tailwind CSS para crear sitios web modernos y responsivos. Comprendí la diferencia entre una librería de componentes y una de utilidades, y cómo ambas pueden acelerar el desarrollo Front-End. Aprendí practicando con ejemplos, explorando la documentación oficial y realizando la práctica calificada, lo que me permitió afianzar los conceptos y aplicarlos en un proyecto real.

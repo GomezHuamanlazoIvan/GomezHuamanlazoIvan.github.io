@@ -1,61 +1,97 @@
 ---
-title: FitQuest - AR Fitness Adventure Game
-description: This web application encourages users to embark on thrilling adventures, complete challenges, and achieve fitness goals in an engaging virtual environment.
-publishDate: 'Dec 28 2023'
+title: SEMANA 06
+description: Aplicaciones con eventos, condicionales, bucles y consumo de APIs en Framework JS.
+publishDate: 'Nov 16 2024'
+isFeatured: true
 seo:
   image:
     src: '/project-6.jpg'
+    alt: Imagen del proyecto 6
 ---
 
-![Project preview](/project-6.jpg)
+# Aplicaciones con Eventos, Condicionales y Bucles en Framework JS
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Esta semana se enfocó en el desarrollo de aplicaciones interactivas utilizando un framework JS (como React), trabajando con eventos, renderizado condicional, bucles, formularios y consumo de APIs.
+![Imagen del proyecto 1](/project-6.jpg)
+---
 
-**Project Overview:**
-FitQuest is an augmented reality (AR) fitness adventure game that revolutionizes traditional workout routines by combining physical exercise with immersive gameplay. This web application encourages users to embark on thrilling adventures, complete challenges, and achieve fitness goals in an engaging virtual environment.
+## Eventos en Framework JS
 
-## Objectives
+- Los eventos permiten responder a acciones del usuario, como clics, cambios en formularios, etc.
+  ```jsx
+  <button onClick={() => alert('¡Clic!')}>Haz clic</button>
+  ```
 
-1. Develop a fitness app that leverages augmented reality to make workouts more enjoyable and interactive.
-2. Integrate real-world locations and landmarks into the game, turning everyday environments into exciting adventure settings.
-3. Motivate users to stay active and maintain a consistent fitness routine by blending physical activity with a captivating storyline.
+---
 
-## Features
+## Renderizado Condicional
 
-1. **Augmented Reality Workouts:**
+- Permite mostrar u ocultar elementos según condiciones.
+  ```jsx
+  {isLoggedIn ? <p>Bienvenido</p> : <p>Por favor inicia sesión</p>}
+  ```
 
-- FitQuest utilizes AR technology to overlay game elements onto the real-world environment, creating an immersive and dynamic workout experience.
-- Users engage in exercises that align with the game's storyline while interacting with virtual elements superimposed on their surroundings.
+---
 
-2. **Interactive Storyline and Challenges:**
+## Renderizado Iterativo (Listas)
 
-- The app features an adventure-driven storyline where users embark on quests and missions to complete fitness challenges.
-- Challenges include cardio exercises, strength training, and flexibility workouts, seamlessly integrated into the game's narrative.
+- Se utiliza para mostrar listas de elementos a partir de un array.
+  ```jsx
+  const items = ['Manzana', 'Banana', 'Naranja'];
+  <ul>
+    {items.map((item, idx) => <li key={idx}>{item}</li>)}
+  </ul>
+  ```
 
-3. **Real-World Landmarks Integration:**
+---
 
-- FitQuest incorporates real-world landmarks and locations as key elements in the game, turning parks, streets, and other environments into virtual fitness arenas.
-- Users explore these locations while completing fitness challenges and unlocking new levels.
+## Formularios y Routing
 
-4. **Multiplayer Mode and Team Challenges:**
+- **Formularios:**  
+  - Manejo de inputs, estados y envío de datos.
+    ```jsx
+    const [nombre, setNombre] = useState('');
+    <input value={nombre} onChange={e => setNombre(e.target.value)} />
+    ```
+- **Routing:**  
+  - Navegación entre páginas usando librerías como React Router.
+    ```jsx
+    import { BrowserRouter, Route, Link } from 'react-router-dom';
+    ```
 
-- Users can connect with friends or join teams to participate in multiplayer challenges.
-- Team-based missions encourage collaboration and friendly competition, enhancing the social aspect of fitness.
+---
 
-5. **Fitness Tracking and Progress Monitoring:**
+## Consumo de APIs
 
-- The app includes a comprehensive fitness tracking system that monitors users' progress, calories burned, and achievements.
-- Users can set personalized fitness goals and track their improvement over time.
+- **Promesas y async/await:**  
+  - Permiten manejar operaciones asíncronas, como obtener datos de una API.
+    ```js
+    fetch('https://api.example.com/data')
+      .then(res => res.json())
+      .then(data => console.log(data));
+    // Con async/await
+    async function obtenerDatos() {
+      const res = await fetch('https://api.example.com/data');
+      const data = await res.json();
+      console.log(data);
+    }
+    ```
+- **Axios:**  
+  - Librería para hacer peticiones HTTP de forma sencilla.
+    ```js
+    import axios from 'axios';
+    axios.get('https://api.example.com/data')
+      .then(res => console.log(res.data));
+    ```
 
-## Technology Stack
+---
 
-- Frontend: Unity for AR game development.
-- Backend: Node.js for handling server-side logic and real-time data synchronization.
-- Database: MongoDB for storing user profiles, fitness data, and game progress.
-- AR Integration: ARCore (Android) and ARKit (iOS) for augmented reality features.
+## Laboratorio 06A: Eventos y Renderizado Condicional e Iterativo con Datos de una API
 
-## Outcome
+En el laboratorio se desarrolló una aplicación que responde a eventos del usuario, muestra información de manera condicional e iterativa, y consume datos de una API utilizando promesas y async/await.
 
-FitQuest has transformed the fitness landscape by merging physical activity with immersive gaming experiences. Users not only enjoy staying active but also find motivation in the storyline and challenges, creating a unique and entertaining approach to maintaining a healthy lifestyle.
+---
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Reflexión
+
+Esta semana aprendí a manejar eventos, condicionales y bucles en aplicaciones con framework JS, así como a consumir APIs externas y manejar datos asíncronos. Aprendí practicando con ejemplos, resolviendo ejercicios y desarrollando una aplicación en el laboratorio, lo que me permitió consolidar los conceptos y aplicarlos en proyectos reales.

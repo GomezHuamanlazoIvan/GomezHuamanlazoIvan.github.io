@@ -1,62 +1,80 @@
 ---
-title: CryptoTrader - Cryptocurrency Portfolio Manager
-description: CryptoTrader Dashboard is a comprehensive web application designed to empower cryptocurrency enthusiasts with tools to manage and optimize their digital asset portfolios.
-publishDate: 'Jan 10 2024'
+title: SEMANA 07
+description: Uso de Hooks en Framework JS: useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo y hooks personalizados.
+publishDate: 'Nov 23 2024'
 isFeatured: true
 seo:
   image:
-    src: 'project-7.jpg'
+    src: '/project-7.jpg'
+    alt: Imagen del proyecto 7
 ---
 
-![Project preview](/project-7.jpg)
+# Uso de Hooks en Framework JS
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Esta semana se profundizó en el uso de hooks en frameworks como React, permitiendo gestionar el estado, efectos secundarios, contexto, referencias y optimización de componentes funcionales.
+![Imagen del proyecto 1](/project-7.jpg)
+---
 
-**Project Overview:**
-CryptoTrader Dashboard is a comprehensive web application designed to empower cryptocurrency enthusiasts with tools to manage and optimize their digital asset portfolios. By providing real-time market data, analytics, and portfolio tracking, the dashboard offers a seamless experience for users to monitor and enhance their cryptocurrency investments.
+## Principales Hooks
 
-## Objectives
+- **useState:** Permite manejar el estado en componentes funcionales.
+  ```jsx
+  const [contador, setContador] = useState(0);
+  ```
+- **useEffect:** Permite ejecutar efectos secundarios (fetch, suscripciones, etc.) en el ciclo de vida del componente.
+  ```jsx
+  useEffect(() => {
+    document.title = `Contador: ${contador}`;
+  }, [contador]);
+  ```
+- **useContext:** Permite acceder a valores globales definidos en un contexto.
+  ```jsx
+  const valor = useContext(MiContexto);
+  ```
+- **useRef:** Permite crear referencias a elementos del DOM o valores persistentes.
+  ```jsx
+  const inputRef = useRef(null);
+  ```
+- **useReducer:** Permite manejar estados complejos con lógica de reducción.
+  ```jsx
+  const [estado, dispatch] = useReducer(reducer, estadoInicial);
+  ```
+- **useCallback:** Memoriza funciones para evitar recrearlas en cada render.
+  ```jsx
+  const handleClick = useCallback(() => { /* ... */ }, []);
+  ```
+- **useMemo:** Memoriza valores calculados para optimizar el rendimiento.
+  ```jsx
+  const valorCalculado = useMemo(() => calcularAlgo(data), [data]);
+  ```
 
-1. Develop a user-friendly and feature-rich dashboard that consolidates real-time data from various cryptocurrency exchanges.
-2. Provide tools for users to analyze market trends, track their portfolio performance, and make informed investment decisions.
-3. Create a secure and efficient platform that ensures users have a holistic view of their cryptocurrency holdings.
+---
 
-## Features
+## Hooks Personalizados
 
-1. **Multi-Exchange Integration:**
+- Permiten reutilizar lógica de estado y efectos en diferentes componentes.
+  ```jsx
+  function useContador(inicial = 0) {
+    const [valor, setValor] = useState(inicial);
+    const incrementar = () => setValor(v => v + 1);
+    return [valor, incrementar];
+  }
+  ```
 
-- CryptoTrader Dashboard aggregates data from multiple cryptocurrency exchanges, allowing users to view their entire portfolio in one centralized location.
-- Real-time updates provide the latest market prices, trading volumes, and order book data.
+---
 
-2. **Portfolio Analytics:**
+## Evaluación de Logro 01
 
-- Users can analyze their portfolio's performance through interactive charts and graphs.
-- The dashboard offers insights into historical performance, asset allocation, and profit/loss over time.
+Se realizó una evaluación práctica donde se aplicaron los conocimientos sobre hooks, gestionando estados, efectos y contexto en una aplicación real.
 
-3. **Risk Management Tools:**
+---
 
-- Advanced risk management tools help users assess the volatility and potential risks associated with their cryptocurrency investments.
-- Users receive alerts for significant market fluctuations or changes in their portfolio value.
+## Laboratorio 06: Uso de Hooks
 
-4. **Automated Transaction Tracking:**
+En el laboratorio se desarrollaron ejercicios prácticos utilizando los principales hooks y creando hooks personalizados para resolver problemas comunes en el desarrollo de aplicaciones.
 
-- The dashboard automatically tracks and records users' cryptocurrency transactions, simplifying the process of updating and managing portfolios.
-- Users can categorize transactions, add notes, and maintain a comprehensive transaction history.
+---
 
-5. **News and Market Insights:**
+## Reflexión
 
-- A dedicated section provides real-time news and market insights relevant to users' cryptocurrency holdings.
-- Users can stay informed about market trends, regulatory developments, and news affecting their investment decisions.
-
-## Technology Stack
-
-- Frontend: React for a responsive and interactive user interface.
-- Backend: Django for server-side logic and API integration.
-- Database: PostgreSQL for efficient storage and retrieval of portfolio and market data.
-- API Integration: Integration with cryptocurrency exchange APIs for real-time market data.
-
-## Outcome
-
-CryptoTrader Dashboard has become a trusted companion for cryptocurrency investors, offering a consolidated and user-friendly platform for managing their portfolios. The robust analytics, real-time market data, and risk management tools empower users to make informed decisions and navigate the dynamic world of cryptocurrency with confidence.
-
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Esta semana aprendí a utilizar los hooks de React para gestionar el estado, efectos secundarios, contexto y referencias, así como a optimizar componentes y crear hooks personalizados. Aprendí mediante la práctica, resolviendo ejercicios y aplicando los conceptos en el laboratorio y la evaluación, lo que me permitió consolidar el uso de hooks en el desarrollo Front-End moderno.

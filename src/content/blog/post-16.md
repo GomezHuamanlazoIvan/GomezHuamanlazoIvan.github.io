@@ -8,11 +8,11 @@ tags:
   - Guide
 seo:
   image:
-    src: '/post-2.jpg'
+    src: '/post-14.jpg'
     alt: Wavy lines
 ---
 
-![Wavy lines](/post-2.jpg)
+![Wavy lines](/post-14.jpg)
 
 A continuación, comparto un listado de enlaces a recursos, herramientas y tecnologías que he utilizado en el desarrollo de este portafolio y en las actividades de cada semana:
 

@@ -1,43 +1,42 @@
 ---
-title: About
+title: Acerca de
 seo:
-  title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
+  title: Sobre mí
+  description: Conoce más sobre la persona detrás del sitio web y emprende un viaje de inspiración y experiencias compartidas.
   image:
     src: '/about.jpeg'
-    alt: A person sitting at a desk in front of a computer
+    alt: Una persona sentada en un escritorio frente a una computadora
 ---
 
-![Alt text for image](/about.jpeg)
+![Foto de perfil](/about.jpeg)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
 
-## Ethan Donovan - Web Developer based in Estonia
+## Ivan Paul Gomez Huamanlazo - Desarrollador Web
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+**¡Hola!** Soy Ivan Paul Gomez Huamanlazo, un apasionado desarrollador web con una gran dedicación por el diseño y la creación de experiencias digitales fluidas. Combino creatividad y conocimientos técnicos para aportar soluciones únicas al mundo del desarrollo web.
 
-## Skills and Expertise
+## Habilidades y experiencia
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+Me especializo en desarrollo frontend y backend, utilizando las tecnologías más recientes para construir sitios web responsivos y fáciles de usar. Mis competencias incluyen **HTML**, **CSS**, **JavaScript** y frameworks como **Astro.js** para interfaces dinámicas e interactivas. En el lado del servidor, tengo experiencia con Node.js y sistemas de gestión de bases de datos como MongoDB.
 
-## Innovation and Problem-Solving
+## Innovación y resolución de problemas
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+Disfruto resolviendo problemas complejos y transformando ideas en sitios web funcionales y elegantes. Ya sea optimizando el rendimiento, implementando nuevas funciones o solucionando errores, afronto cada reto con entusiasmo y compromiso por la calidad.
 
-## Global Perspective, Local Impact
+## Perspectiva global, impacto local
 
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
+Valoro la importancia de crear soluciones digitales que conecten con audiencias locales sin perder de vista una perspectiva global.
 
-## Continuous Learning
+## Aprendizaje continuo
 
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
+La naturaleza dinámica de la tecnología me motiva a mantenerme actualizado con las últimas tendencias y avances. Siempre busco ampliar mis conocimientos y adoptar nuevas tecnologías que mejoren la funcionalidad y estética de los sitios que desarrollo.
 
-## Collaboration and Communication
+## Colaboración y comunicación
 
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
+Creo en el poder de la colaboración y la comunicación efectiva. Ya sea trabajando con clientes, diseñadores u otros desarrolladores, valoro la claridad para asegurar el éxito de cada proyecto.
 
-## Get in Touch
+## Contáctame
 
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
+¿Quieres mejorar tu presencia en línea o hacer realidad tus ideas digitales? ¡Me encantaría saber de ti! No dudes en contactarme para colaborar, consultar o simplemente conversar sobre desarrollo web.
 
-_Let's build something amazing together!_
+_¡Construyamos algo increíble juntos!_

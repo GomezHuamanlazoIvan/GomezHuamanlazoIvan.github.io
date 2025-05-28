@@ -1,64 +1,159 @@
 ---
-title: 'TimeWarp - Travel Agency Website'
-description: Explore the possibilities of time travel through an immersive website for a fictional travel agency, complete with dynamic destination timelines and interactive historical events.
-publishDate: 'Oct 2 2023'
+title: SEMANA 02
+description: Construcción de páginas web con HTML, XML y CSS3. Estructura, etiquetas, DOM, SEO, compatibilidad y diseño responsivo.
+publishDate: 'Oct 19 2024'
 isFeatured: true
 seo:
   image:
     src: '/project-2.jpg'
-    alt: Project preview
+    alt: Imagen del proyecto 2
 ---
 
-![Project preview](/project-2.jpg)
+# Construcción de Páginas Web con HTML, XML y CSS3
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+En esta semana se abordaron los conceptos y prácticas fundamentales para construir páginas web modernas utilizando HTML, XML y CSS3, así como técnicas de optimización y compatibilidad.
+![Imagen del proyecto 2](/project-2.jpg)
+---
 
-**Project Overview:**
-TimeWarp Travel Agency aims to redefine the travel experience by offering an innovative and immersive online platform that explores the concept of time travel. The website combines cutting-edge technology with captivating storytelling to provide users with a unique journey through time.
+## Lenguaje Marcado de Hipertexto HTML y Lenguaje Marcado Extensible XML
 
-> Working with Ethan Donovan was a game-changer for our online presence. Their innovative solutions and attention to detail turned our vision into a reality. The website not only looks fantastic but also functions seamlessly. A true professional who exceeded our expectations!
+- **HTML (HyperText Markup Language):** Es el lenguaje principal para estructurar el contenido de la web.  
+  _Ejemplo:_  
+  ```html
+  <h1>Bienvenido a mi página</h1>
+  <p>Gomez Huamanlazo Ivan Paul.</p>
+  ```
 
-## Objectives
+- **XML (eXtensible Markup Language):** Es un lenguaje de marcado flexible para almacenar y transportar datos.  
+  _Ejemplo:_  
+  ```xml
+  <persona>
+    <nombre>Paul</nombre>
+    <edad>26</edad>
+  </persona>
+  ```
 
-1. Create a visually stunning and user-friendly website that captures the essence of time travel.
-2. Integrate interactive elements to engage users and make the experience memorable.
-3. Develop a responsive design to ensure a seamless user experience across various devices.
+---
 
-## Features
+## Estándar Open Web Platform
 
-1. **Dynamic Destination Timelines:**
+La Open Web Platform es un conjunto de tecnologías abiertas (HTML, CSS, JavaScript, SVG, etc.) que permiten crear aplicaciones web interoperables y accesibles en cualquier navegador moderno.
 
-- Users can explore destinations through dynamic timelines, showcasing significant historical events, cultural developments, and architectural milestones.
-- Interactive sliders allow users to navigate through different eras, providing a visual representation of the historical evolution of each location.
+---
 
-2. **Interactive Historical Events:**
+## Estructura HTML y XML
 
-- Users can click on specific points in the timeline to reveal detailed information about key historical events related to the chosen destination.
-- Rich multimedia content, including images, videos, and articles, provides a comprehensive understanding of each event.
+- **HTML:**  
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Mi Página Web</title>
+    </head>
+    <body>
+      <h1>Hola Mundo</h1>
+    </body>
+  </html>
+  ```
+- **XML:**  
+  ```xml
+  <libro>
+    <titulo>Desarrollo Web</titulo>
+    <autor>Ivan Gomez</autor>
+  </libro>
+  ```
 
-3. **Personalized Time Travel Planner:**
+---
 
-- A personalized planner feature enables users to create their time travel itineraries by selecting specific eras and destinations.
-- The system suggests thematic experiences, such as attending historical events or meeting famous personalities.
+## Etiquetas principales de HTML5
 
-4. **Time-Port Virtual Reality Experience:**
+- `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<h1>`-`<h6>`, `<p>`, `<img>`, `<a>`, `<ul>`, `<li>`, `<form>`, `<input>`, `<button>`, etc.
 
-- For an extra layer of immersion, users can opt for the Time-Port VR experience, allowing them to virtually step into different time periods and explore the surroundings in 360 degrees.
+---
 
-5. **Chronicle Explorer Blog:**
+## Árbol DOM y Renderizado
 
-- A blog section, "Chronicle Explorer," offers in-depth articles and stories about various historical periods and their impact on the destinations featured on the platform.
-- Users can engage with the content, comment, and share their own historical insights.
+- **DOM (Document Object Model):** Representa la estructura de la página como un árbol de nodos.
+- **Árbol de Nodos:** Cada elemento HTML es un nodo en el árbol.
+- **Renderizado de Árbol:** El navegador interpreta el DOM y lo convierte en la visualización de la página.
+- **Ciclo de Vida de una Página Web:**  
+  1. El navegador solicita la página al servidor.
+  2. Recibe el HTML y construye el DOM.
+  3. Aplica CSS y JavaScript.
+  4. Renderiza la página para el usuario.
 
-## Technology Stack
+---
 
-- **Frontend:** [Astro.js](https://astro.build/) for a dynamic and responsive user interface and [Tailwind CSS](https://tailwindcss.com/) for styling.
-- **Backend:** Node.js for handling server-side logic and API integration.
-- **Database:** MongoDB for efficient storage and retrieval of historical data.
-- **VR Integration:** A-Frame framework for creating immersive virtual reality experiences.
+## Optimización en Motores de Búsqueda (SEO)
 
-## Outcome
+- Uso correcto de etiquetas semánticas (`<header>`, `<main>`, `<footer>`, etc.).
+- Títulos y descripciones relevantes.
+- Uso de atributos `alt` en imágenes.
+- URLs amigables.
+- Contenido de calidad y bien estructurado.
 
-The TimeWarp Travel Agency Website successfully brings the concept of time travel to life, providing users with a captivating and educational experience. The website not only serves as a travel planning tool but also as an interactive platform that encourages users to explore and appreciate the rich tapestry of human history.
+---
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Compatibilidad entre Navegadores
+
+- Probar el sitio en diferentes navegadores (Chrome, Firefox, Edge, Safari).
+- Usar prefijos y propiedades compatibles.
+- Validar el código HTML y CSS.
+- Evitar funciones experimentales sin soporte.
+
+---
+
+## Diseño de la Página Web con CSS3
+
+- **Sintaxis básica:**  
+  ```css
+  h1 { color: blue; }
+  ```
+- **Display:**  
+  - `block`, `inline`, `inline-block`
+- **Unidades de medida:**  
+  - Absolutas: `px`, `cm`, `mm`
+  - Relativas: `%`, `em`, `rem`, `vw`, `vh`
+- **Flexbox:**  
+  - Permite crear diseños flexibles y alineaciones sencillas.
+  - _Ejemplo:_  
+    ```css
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ```
+- **Grid Layout:**  
+  - Permite crear estructuras de diseño en dos dimensiones.
+  - _Ejemplo:_  
+    ```css
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    ```
+- **Tipos de position:**  
+  - `static`, `relative`, `absolute`, `fixed`, `sticky`
+- **Diseño fluido:**  
+  - Uso de porcentajes y unidades relativas para adaptarse a diferentes tamaños de pantalla.
+- **Diseño web responsivo:**  
+  - Uso de media queries para adaptar el diseño a dispositivos móviles y de escritorio.
+  - _Ejemplo:_  
+    ```css
+    @media (max-width: 600px) {
+      body { font-size: 14px; }
+    }
+    ```
+
+---
+
+## Laboratorio 02A: Diseño Flexbox, Fluido y Responsivo
+
+En el laboratorio se practicó la creación de layouts usando flexbox, el diseño fluido con unidades relativas y la adaptación responsiva mediante media queries.
+
+---
+
+## Reflexión
+
+Durante esta semana aprendí a estructurar páginas web utilizando HTML5 y XML, comprendiendo la importancia de las etiquetas semánticas y la estructura del DOM. Aprendí cómo los navegadores procesan y renderizan las páginas, y la relevancia de optimizar para SEO y compatibilidad. Además, experimenté con CSS3, flexbox, grid y diseño responsivo, aplicando estos conceptos en ejercicios prácticos. El aprendizaje fue principalmente práctico, reforzado con ejemplos, documentación oficial y la experimentación en el laboratorio, lo que me permitió afianzar los conceptos y ver su aplicación real en el desarrollo web.
